@@ -1,4 +1,4 @@
-# 🚀 Backend Practice Repository
+#  Backend Practice Repository
 
 ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
@@ -10,7 +10,7 @@ Welcome to my **Backend Practice Monorepo**! 🌟 This repository contains a var
 
 ---
 
-## 🏗️ Overview Architecture
+##  Overview Architecture
 
 Here is a conceptual look at how these different microservices and concepts could interact in a real-world ecosystem:
 
@@ -53,24 +53,24 @@ graph TD;
 
 ---
 
-## 🧩 Mini-Projects Explained
+##  Mini-Projects Explained
 
-### 1. 🔐 Auth-system
+### 1.  Auth-system
 A robust authentication and authorization server. 
 - **Tech Stack:** Node.js, Express, Mongoose, `bcrypt`, `jsonwebtoken`.
 - **Features:** User registration, secure password hashing, JWT token generation for session management, and protected API routes.
 
-### 2. 💬 Chat-App
+### 2.  Chat-App
 A real-time communication application.
 - **Tech Stack:** React (Client), Node.js (Server), Socket.io (WebSockets).
 - **Features:** Real-time messaging, user presence detection, and instant state updates without HTTP polling.
 
-### 3. 🎫 Event-hub
+### 3.  Event-hub
 An event management application spanning full-stack development.
 - **Tech Stack:** React (Client), Node.js (Server).
 - **Features:** Creating events, managing attendees, and handling standard event lifecycle operations.
 
-### 4. 📜 Logger-system
+### 4.  Logger-system
 A high-performance, asynchronous logging service using message queues. By decoupling logging from the main application thread, it ensures high performance.
 - **Tech Stack:** Node.js, Express, `ioredis`, `bullmq`, MongoDB.
 - **How it works:** 
@@ -85,17 +85,17 @@ A high-performance, asynchronous logging service using message queues. By decoup
       Worker->>DB: Save Log Entry
   ```
 
-### 5. ⏱️ Rate-limiter
+### 5.  Rate-limiter
 A protective middleware service designed to prevent API abuse, brute-force attacks, and DDoS attempts.
 - **Tech Stack:** Node.js, Express.
 - **Features:** Tracks client IP addresses and restricts the number of allowed HTTP requests within a configured time window.
 
-### 6. 📄 Resume-parser
+### 6.  Resume-parser
 A utility service for handling file uploads and extracting text from PDFs.
 - **Tech Stack:** Node.js, Express, `multer`, `pdf-parse`.
 - **Features:** Securely accepts `.pdf` resume uploads, parses the binary data, and extracts readable text for further analysis or indexing.
 
-### 7. 🔗 url-shortener
+### 7.  url-shortener
 A service similar to Bitly that converts long, unwieldy URLs into compact, shareable identifiers.
 - **Tech Stack:** Node.js, Express, MongoDB, `nanoid`.
 - **How it works:**
@@ -127,5 +127,3 @@ Each project is self-contained. To run any specific service locally:
    npm run dev
    ```
 
----
-*Built with ❤️ and dedication to master backend engineering.*
