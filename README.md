@@ -6,7 +6,7 @@
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-Welcome to my **Backend Practice Monorepo**! 🌟 This repository contains a variety of backend projects, microservices, and experiments designed to practice modern backend development, system design, and software architecture.
+Welcome to my **Backend Practice Monorepo**!  This repository contains a variety of backend projects, microservices, and experiments designed to practice modern backend development, system design, and software architecture.
 
 ---
 
@@ -16,16 +16,16 @@ Here is a conceptual look at how these different microservices and concepts coul
 
 ```mermaid
 graph TD;
-    Client([💻 Client Applications]) --> API_Gateway{🌐 API Gateway}
-    API_Gateway --> Auth[🔐 Auth-system]
-    API_Gateway --> RateLimit[⏱️ Rate-limiter]
+    Client([ Client Applications]) --> API_Gateway{ API Gateway}
+    API_Gateway --> Auth[ Auth-system]
+    API_Gateway --> RateLimit[ Rate-limiter]
     
-    RateLimit --> Chat[💬 Chat-App]
-    RateLimit --> Event[🎫 Event-hub]
-    RateLimit --> URL[🔗 url-shortener]
-    RateLimit --> Resume[📄 Resume-parser]
+    RateLimit --> Chat[ Chat-App]
+    RateLimit --> Event[ Event-hub]
+    RateLimit --> URL[ url-shortener]
+    RateLimit --> Resume[ Resume-parser]
     
-    Chat -. Logs .-> Logger[📜 Logger-system]
+    Chat -. Logs .-> Logger[ Logger-system]
     Event -. Logs .-> Logger
     Auth -. Logs .-> Logger
     
@@ -38,17 +38,17 @@ graph TD;
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
-📦 Backend-Practice
- ├── 🔐 Auth-system      # JWT-based Authentication API
- ├── 💬 Chat-App         # Real-time WebSocket Chat Application
- ├── 🎫 Event-hub        # Event Management System (Client + Server)
- ├── 📜 Logger-system    # Redis + BullMQ Asynchronous Logging Service
- ├── ⏱️ Rate-limiter     # API Rate Limiting Middleware
- ├── 📄 Resume-parser    # PDF Upload & Text Parsing Service
- └── 🔗 url-shortener    # URL Shortening & Redirect Service
+ Backend-Practice
+ ├──  Auth-system      # JWT-based Authentication API
+ ├──  Chat-App         # Real-time WebSocket Chat Application
+ ├──  Event-hub        # Event Management System (Client + Server)
+ ├──  Logger-system    # Redis + BullMQ Asynchronous Logging Service
+ ├──  Rate-limiter     # API Rate Limiting Middleware
+ ├──  Resume-parser    # PDF Upload & Text Parsing Service
+ └──  url-shortener    # URL Shortening & Redirect Service
 ```
 
 ---
@@ -109,7 +109,7 @@ A service similar to Bitly that converts long, unwieldy URLs into compact, share
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 Each project is self-contained. To run any specific service locally:
 
